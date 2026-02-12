@@ -1,0 +1,1 @@
+Doumentation: https://tricksumo.com/aws-serverless-crud-app-lambda-dynamodb-apigateway-cognito-cloudfront-cloudflare/#close

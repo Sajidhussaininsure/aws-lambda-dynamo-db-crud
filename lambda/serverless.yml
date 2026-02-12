@@ -1,0 +1,29 @@
+service: coffee-service
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  stage: dev
+  region: eu-north-1
+  environment:
+    tableName: Cofee_Shop
+
+functions:
+  getCoffee:
+    handler: get/index.getCoffee
+    events:
+      - httpApi:
+          path: /coffee
+          method: GET
+      - httpApi:
+          path: /coffee/{id}
+          method: GET
+  createCoffee:
+    handler: post/index.createCoffee
+    events:
+      - httpApi:
+          path: /coffee
+          method: POST
+
+plugins:
+  - serverless-offline

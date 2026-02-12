@@ -1,0 +1,19 @@
+{
+  "name": "lambda",
+  "version": "1.0.0",
+  "description": "Doumentation: https://tricksumo.com/aws-serverless-crud-app-lambda-dynamodb-apigateway-cognito-cloudfront-cloudflare/#close",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.988.0",
+    "@aws-sdk/lib-dynamodb": "^3.988.0"
+  },
+  "devDependencies": {
+    "serverless": "^4.31.2",
+    "serverless-offline": "^14.4.0"
+  }
+}
